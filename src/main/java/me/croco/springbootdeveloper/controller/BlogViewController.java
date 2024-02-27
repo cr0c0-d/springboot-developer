@@ -26,7 +26,7 @@ public class BlogViewController {
                 .toList();
         model.addAttribute("articles", articles);    // 블로그 글 리스트 저장
 
-        return "articleList";   // articleList.html 이라는 뷰 주회
+        return "articleList";   // articleList.html 이라는 뷰 조회
     }
 
     @GetMapping("/articles/{id}")
