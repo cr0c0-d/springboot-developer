@@ -44,6 +44,9 @@ dependencies {
 
     // OAuth2를 사용하기 위한 스타터 추가
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+
+    // mysql
+    implementation 'mysql:mysql-connector-java'
 }
 
 test {
