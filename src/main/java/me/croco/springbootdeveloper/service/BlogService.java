@@ -1,6 +1,7 @@
 package me.croco.springbootdeveloper.service;
 
 import lombok.RequiredArgsConstructor;
+import me.croco.springbootdeveloper.config.error.exception.ArticleNotFoundException;
 import me.croco.springbootdeveloper.domain.Article;
 import me.croco.springbootdeveloper.dto.AddArticleRequest;
 import me.croco.springbootdeveloper.dto.UpdateArticleRequest;
@@ -28,7 +29,7 @@ public class BlogService {
 
     public Article findById(long id) {
         return blogRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("not found : " + id));
+                .orElseThrow(ArticleNotFoundException::new);
     }
 
     public void delete(long id) {
