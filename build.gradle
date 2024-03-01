@@ -47,6 +47,12 @@ dependencies {
 
     // mysql
     implementation 'mysql:mysql-connector-java'
+
+    // Faker 의존성 추가 ( 테스트용 가짜 데이터 생성 라이브러리)
+    testImplementation 'com.github.javafaker:javafaker:1.0.2'
+
+    // Spring Validation 의존성 추가
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
 }
 
 test {
