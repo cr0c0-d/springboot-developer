@@ -32,5 +32,5 @@ spring:
       enabled: true
 
 jwt:
-  issuer: hyde69ciel@gmail.com
-  secret_key: study-springboot
+  issuer: issuer
+  secret_key: secret_key
