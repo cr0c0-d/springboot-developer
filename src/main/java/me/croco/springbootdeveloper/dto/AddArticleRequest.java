@@ -13,7 +13,7 @@ import me.croco.springbootdeveloper.domain.Article;
 public class AddArticleRequest {
 
     @NotNull
-    @Size(min = 1, max = 10)
+    @Size(min = 1, max = 50)
     private String title;
 
     @NotNull
